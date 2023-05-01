@@ -1,0 +1,59 @@
+*{
+    font-family: "poppins";
+}
+.text_13{
+    font-size: 13px !important;
+}
+.text_12{
+    font-size: 12px !important;
+}
+
+/* About us */
+.about_accordion-button:focus {
+    box-shadow: none !important;
+    border-color: rgba(146, 146, 146, 0.977) !important;
+}
+.about_accordion{
+    border-bottom:1px solid #a9a9a9 !important;
+    border-left:1px solid #a9a9a9 !important;
+    border-right:1px solid #a9a9a9 !important;
+}
+.about_accordion-body{
+    border:1px solid #a9a9a9 !important;
+}
+.product_description{
+    font-size: 12px;
+}
+.order_step_description{
+    font-size: 13px;
+}
+
+
+/* Contact us */
+
+.listing{
+    list-style: none;
+}
+
+
+/* product */
+.icon_setting{
+    border-radius: 50%;
+    height:80px;
+    width:80px;
+}
+.product_img:hover{
+    border: 1px solid #0fa30d;
+}
+#pack1,#pack2,#pack3{
+    border:2px solid black;
+}
+
+
+/* green basket */
+.green_basket_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:10px;
+}

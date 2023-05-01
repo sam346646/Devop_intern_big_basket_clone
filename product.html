@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-lg-6 py-2">
+                <img src="images/p1.webp" alt="" id="main_img" class="float-end rounded img-fluid pb-2" width="430">
+                <img src="images/p1.webp" onclick="changeImage1()" width="80" class="rounded mb-2 product_img" alt="">
+                <img src="images/p2.webp" onclick="changeImage2()" width="80" class="rounded mb-2 product_img" alt="">
+                <img src="images/p3.webp" onclick="changeImage3()" width="80" class="rounded mb-2 product_img" alt="">
+                <img src="images/p4.webp" onclick="changeImage4()" width="80" class="rounded mb-2 product_img" alt="">
+                <img src="images/p5.webp" onclick="changeImage5()" width="80" class="rounded mb-2 product_img" alt="">
+            </div>
+            <div class="col-lg-6 py-2">
+                <h6 class="fw-bold">Fresho Capsicum - Green (Loose), <span id="gram_id">500 g</span></h6>
+                <span class="text-secondary">MRP: &#8377;<s id="original_price_id">13.16</s></span><br>
+                <h6>Price: &#8377;<span id="discount_price_id">10</span> <span class="text-secondary">(&#8377;<span id="per_gram_id">0.02 / g</span>)</span></h6>
+                <span class="text-success">You Save: <span id="percentage_off_id">24</span>% OFF</span><br>
+                <span class="text-secondary">(inclusive of all taxes)</span><br><br>
+                <button class="btn btn-danger btn-lg mb-1">Add to basket</button>&emsp;
+                <button class="btn btn-light btn-lg"><i class="fa fa-bookmark-o"></i> Save for later</button><br><br>
+                <span class="text-secondary"><i class='fa fa-truck'></i> Standard: Get it in 1 day</span><br><br>
+
+                <span class="fw-bold">Pack size</span><br>
+                <div class="d-grid gap-2">
+                    <button class="btn text-start" type="button" onclick="changepack1()" id="pack1">
+                        <div class="row">
+                            <div class="col">
+                                <h6 id="gram_id1">500 g</h6>
+                            </div>
+                            <div class="col">
+                                <h6>&#8377;<span id="discount_price_id">10</span> <span class="text-secondary">(&#8377;0.02 / g)</span></h6>
+                                <s class="text-secondary">&#8377; 13.16</s>&emsp;<span
+                                    class="bg-success text-success bg-opacity-25 px-2">24% OFF</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btn text-start" type="button" onclick="changepack2()" id="pack2">
+                        <div class="row">
+                            <div class="col">
+                                <h6>250 g</h6>
+                            </div>
+                            <div class="col">
+                                <h6>&#8377;5 <span class="text-secondary">(&#8377;0.02 / g)</span></h6>
+                                <s class="text-secondary">&#8377; 6.58</s>&emsp;<span
+                                    class="bg-success text-success bg-opacity-25 px-2">24% OFF</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btn text-start" type="button" onclick="changepack3()"  id="pack3">
+                        <div class="row">
+                            <div class="col">
+                                <h6>1 kg</h6>
+                            </div>
+                            <div class="col">
+                                <h6>&#8377;19.5 <span class="text-secondary">(&#8377;19.5 / kg)</span></h6>
+                                <s class="text-secondary">&#8377; 26.32</s>&emsp;<span
+                                    class="bg-success text-success bg-opacity-25 px-2">26% OFF</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <div class="text-center fw-bold mt-3">Why choose Bigbasket?</div>
+        <div class="row py-2 ">
+            <div class="col mb-1">
+                <div class="card text-center bg-light">
+                    <div class="card-body">
+                        <i class="fa fa-thermometer-full rounded-circle bg-white py-3 px-4"
+                            aria-hidden="true"></i><br><br>
+                        <span class="fw-bold">Quality</span><br>
+                        You can trust
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-1">
+                <div class="card text-center bg-light">
+                    <div class="card-body">
+                        <i class="fa fa-clock-o rounded-circle bg-white py-3 px-4" aria-hidden="true"></i><br><br>
+                        <span class="fw-bold">On time</span><br>
+                        Guarantee
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light">
+                    <div class="card-body">
+                        <i class="fa fa-truck rounded-circle bg-white py-3 px-4" aria-hidden="true"></i><br><br>
+                        <span class="fw-bold">Free</span><br>
+                        Delivery
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light">
+                    <div class="card-body">
+                        <i class="fa fa-trash-o rounded-circle bg-white py-3 px-4" aria-hidden="true"></i><br><br>
+                        <span class="fw-bold">Return Policy</span><br>
+                        No Question asked
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+
+        <h6 class="fw-bold mt-5 mb-4">Fresho Capsicum - Green (Loose)</h6>
+        <div class="rounded border border-secondary p-1">
+            <div class="accordion mb-3">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <h6 class="fw-bold pt-2 ps-4">About the Product</h6>
+                        <button class="accordion-button about_accordion-button text_13 bg-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            &emsp;&#183;&emsp;Leaving a moderately pungent taste on the tongue, Green capsicums, also
+                            known as green peppers
+                            are bell shaped, medium-sized fruit pods.<br>
+                            &emsp;&#183;&emsp;They have thick and shiny skin with a fleshy texture inside.
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <h6 class="text_13">Do not forget to check our delicious recipe -</h6>
+                            <a href="https://www.bigbasket.com/cookbook/recipes/2031/capsicum-cheese-rings/" class="text_13 text-decoration-none">
+                            recipes/ 2031/capsicum-cheese-rings/</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+            <div class="pt-2 ps-4 text_13">
+                <h6 class="fw-bold">Benefits</h6>
+                &emsp;&#183;&emsp;Green capsicums have powerful antioxidants and anti-inflammatory properties.<br>
+                &emsp;&#183;&emsp;Rich in Vitamin A, B complex, C and phytonutrients. Relieves pain of bone disorders and has the capacity to relax the repirartory passage.
+            </div>
+            
+            <hr/>
+            <div class="accordion mb-3">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <h6 class="fw-bold pt-2 ps-4">Storage and Uses</h6>
+                        <button class="accordion-button about_accordion-button text_13 bg-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo">
+                            &emsp;&#183;&emsp;Store them in a cool, dry place away from direct sunlight. Keep capsicums dry as moisture makes them rot faster. Refrigerate the peppers unwashed, in a plastic bag and consume within a week. Resort to refrigeration only when they cannot be consumed immediately.
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <h6 class="text_13">&emsp;&#183;&emsp;Green bell peppers can be used for a wide variety of dishes due to its distinct flavour and scent. Can be grilled,roasted, baked and sauteed. Widely used in salads, pastas, pizzas, pepper sauce and even for flavouring curries.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+            <div class="accordion mb-3">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <h6 class="fw-bold pt-2 ps-4">Other Product Info</h6>
+                        <button class="accordion-button about_accordion-button text_13 bg-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                            aria-controls="collapseThree">
+                            EAN Code: 6900001<br>
+                            Sourced & Marketed by: Supermarket Grocery Supplies Pvt. Ltd, No. 7, Service Road, Off 100 Feet Road Indiranagar Landmark: Above HDFC Bank Bangalore, Karnataka 560071
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <h6 class="text_13">Country of Origin: India<br>
+                                Best before 3 days from delivery date<br>
+                                For Queries/Feedback/Complaints, Contact our Customer Care Executive at: Phone: 1860 123 1000 | Address: Innovative Retail Concepts Private Limited, No.18, 2nd & 3rd Floor, 80 Feet Main Road, Koramangala 4th Block, Bangalore - 560034 | Email: customerservice@bigbasket.com</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h6 class="fw-bold mt-5">Rating and Reviews</h6>
+        <div class="text-center rounded border border-secondary">
+            <img src="images/rating.png" alt="" width="400">
+        </div>
+        <div class="bg-light rounded p-4 mt-5">
+            <h6 class="fw-bold">Frequently Bought Together</h6>
+            <hr/>
+            <h6 class="fw-bold mt-4">Similar Products</h6>
+        </div>
+        
+        <div class="text-center m-5">
+            <h6 class="fw-bold">You may like to view more in</h6>
+            <button class="btn border border-dark rounded-pill px-3 mb-1">COUNTRY OF ORIGIN : India ></button>&emsp;
+            <button class="btn border border-dark rounded-pill px-3">FOOD PREFERENCE : Vegetarian ></button>
+        </div>
+
+        <h6 class="fw-bold">Recipes</h6>
+        <div class="text_13 mb-3">Have a look at what you can make with this item</div>
+        <div class="row">
+            <div class="col mb-1">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/recipe1.webp" class="card-img-top mb-1" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Cheesy Potato Lollipops</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-1">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/recipe2.webp" class="card-img-top mb-1" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Paneer Capsicum Fry</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-1">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/recipe3.webp" class="card-img-top mb-1" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Pav Bhaji Masala Omelette</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="fw-bold mt-5">More Information</h6>
+        <span class="text_13 fw-bold">Fruits & Vegetables > Fresh Vegetables</span><br>
+        <span class="text_13">Beans, Brinjals & Okra | Cabbage & Cauliflower | Cucumber & Capsicum | Gourd, Pumpkin, Drumstick | Leafy Vegetables | Potato, Onion & Tomato | Root Vegetables | Specialty</span><br><br>
+        <h6 class="fw-bold">Brands</h6>
+        <div class="text_13 mb-5">Fresho | Fresho Cucumber & Capsicum</div>
+    </div>
+
+    <script>
+        var main_img=document.getElementById("main_img");
+        function changeImage1() 
+        {
+            main_img.src = 'images/p1.webp';
+        }
+        function changeImage2() 
+        {
+            main_img.src = 'images/p2.webp';
+        }
+        function changeImage3() 
+        {
+            main_img.src = 'images/p3.webp';
+        }
+        function changeImage4() 
+        {
+            main_img.src = 'images/p4.webp';
+        }
+        function changeImage5() 
+        {
+            main_img.src = 'images/p5.webp';
+        }
+
+        var gram=document.getElementById("gram_id");
+        var per_gram=document.getElementById("per_gram_id");
+        var original_price=document.getElementById("original_price_id");
+        var discount_price=document.getElementById("discount_price_id");
+        var percentage_off=document.getElementById("percentage_off_id");
+
+        var pack1=document.getElementById("pack1");
+        var pack2=document.getElementById("pack2");
+        var pack3=document.getElementById("pack3");
+
+        function changepack1()
+        {
+            pack1.style.borderColor="green";
+            pack2.style.borderColor="black";
+            pack3.style.borderColor="black";
+            gram.innerHTML="500 g";
+            per_gram.innerHTML="0.02 / g";
+            original_price.innerHTML="13.16";
+            discount_price.innerHTML="10";
+            percentage_off.innerHTML="24";
+        }
+        function changepack2()
+        {
+            pack2.style.borderColor="green";
+            pack1.style.borderColor="black";
+            pack3.style.borderColor="black";
+            gram.innerHTML="250 g";
+            per_gram.innerHTML="0.02 / g";
+            original_price.innerHTML="6.58";
+            discount_price.innerHTML="5";
+            percentage_off.innerHTML="24";
+        }
+        function changepack3()
+        {
+            pack3.style.borderColor="green";
+            pack1.style.borderColor="black";
+            pack2.style.borderColor="black";
+            gram.innerHTML="1 kg";
+            per_gram.innerHTML="19.5 / kg";
+            original_price.innerHTML="26.32";
+            discount_price.innerHTML="19.5";
+            percentage_off.innerHTML="26";
+        }
+    </script>
+</body>
+</html>
