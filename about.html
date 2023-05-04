@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,90 +10,249 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <div class="container-fluid p-3">
-        <h5>About us</h5><br>
-        <div class="accordion accordion-flush about_accordion mb-3">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What is Bigbasket? 
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body about_accordion-body m-3 py-4">
-                        <img src="images/about_1.webp" class="pe-3 float-end about_img" width="90">
-                        <h6 class="fw-bold">What is bigbasket.com</h6> 
-                        <p class="product_description text-secondary">bigbasket.com (Innovative Retail Concepts Private Limited) is India’s largest online food and grocery store. With over 18,000 products and over a 1000 brands in our catalogue you will find everything you are looking for. Right from fresh Fruits and Vegetables, Rice and Dals, Spices and Seasonings to Packaged products, Beverages, Personal care products, Meats – we have it all.<br>
-                        Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at the lowest prices. Select a time slot for delivery and your order will be delivered right to your doorstep, anywhere in Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Mysore, Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore and Chandigarh Tricity. You can pay online using your debit / credit card or by cash / sodexo on delivery.<br>
-                        We guarantee on time delivery, and the best quality!</p>
-                        <h4 class="fw-bold">Happy Shopping</h4>      
+
+<body class="bg-light">
+    <header class="bg-white">
+        <div class="container top-head">
+          <div><span><i class="fa fa-phone"></i></span> 1860 123 1000 </div>
+          <div><span><i class="fa fa-map-marker"></i></span> 56004 Bangalore </div>
+          <div><span><i class="fa fa-user"></i></span> <a href="login.html">Login/Sign Up</a> </div>
+        </div>
+        <div class="container bottom-head p-2">
+          <div class=""><a href="index.html"><img src="images/big basket logo.png" alt=""></a></div>
+          <div class="search-bar"><form action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form></div>
+          <div class="shopping-basket bg-secondary bg-opacity-50 p-2">
+            <span><i class="fa fa-shopping-basket text-danger"></i></span><span class="basket-text-end"> My basket</span>
+          </div>
+        </div>
+      </header>
+      <div class="header-mob">
+        <div class="row text-center fs-2 text-white">
+          <div class="col-3"><i class="fa fa-bars"></i></div>
+          <div class="col-3"><i class="fa fa-user"></i></div>
+          <div class="col-3"><i class="fa fa-map-marker"></i></div>
+          <div class="col-3"><i class="fa fa-shopping-cart"></i></div>
+        </div>
+        <div class="search-bar1"><form action="">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form></div>
+      </div>
+    <div class="container my-2">
+        <div class="row bg-white text_13 py-2">
+            <div class="col-sm-3 border-end">
+                <ul class="listing">
+                    <li>
+                        <a href="about.html" class="text-decoration-none text-success bg-light pe-3">About bigbasket</a>
+                        <ul class="listing">
+                            <li><a href="#about1" class="text-decoration-none text-dark">- What is bigbasket.com</a></li>
+                            <li><a href="#about2" class="text-decoration-none text-dark">- Why shop at bigbasket?</a></li>
+                            <li><a href="#about3" class="text-decoration-none text-dark">- How to order</a></li>
+                            <li><a href="#about4" class="text-decoration-none text-dark">- Where we operate</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="text-decoration-none text-dark">Careers At bigbasket</a></li>
+                    <li><a href="" class="text-decoration-none text-dark">In the Media</a></li>
+                    <li><a href="" class="text-decoration-none text-dark">Customer Speak</a></li>
+                    <li><a href="green_basket.html" class="text-decoration-none text-dark">Green bigbasket</a></li>
+                    <li><a href="" class="text-decoration-none text-dark">Privacy Policy</a></li>
+                    <li><a href="" class="text-decoration-none text-dark">Terms & Conditions</a></li>
+                    <li><a href="" class="text-decoration-none text-dark">FAQ's</a></li>
+                    <li><a href="contact.html" class="text-decoration-none text-dark">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <div class="container-fluid p-3">
+                    <h5>About us</h5><br>
+                    <div class="accordion accordion-flush about_accordion mb-3" id="about1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    What is Bigbasket?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body about_accordion-body m-3 py-4">
+                                    <img src="images/about_1.webp" class="pe-3 float-end about_img" width="90">
+                                    <h6 class="fw-bold">What is bigbasket.com</h6>
+                                    <p class="product_description text-secondary">bigbasket.com (Innovative Retail
+                                        Concepts Private Limited) is India’s largest online food and grocery store. With
+                                        over 18,000 products and over a 1000 brands in our catalogue you will find
+                                        everything you are looking for. Right from fresh Fruits and Vegetables, Rice and
+                                        Dals, Spices and Seasonings to Packaged products, Beverages, Personal care
+                                        products, Meats – we have it all.<br>
+                                        Choose from a wide range of options in every category, exclusively handpicked to
+                                        help you find the best quality available at the lowest prices. Select a time
+                                        slot for delivery and your order will be delivered right to your doorstep,
+                                        anywhere in Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Mysore,
+                                        Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Lucknow-Kanpur,
+                                        Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore and Chandigarh
+                                        Tricity. You can pay online using your debit / credit card or by cash / sodexo
+                                        on delivery.<br>
+                                        We guarantee on time delivery, and the best quality!</p>
+                                    <h4 class="fw-bold">Happy Shopping</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush about_accordion mb-3" id="about2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="true" aria-controls="collapseTwo">
+                                    Why should I shop at bigbasket?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body about_accordion-body m-3 py-4">
+                                    <img src="images/about_2.webp" class="pe-3 float-end about_img" width="85">
+                                    <h6 class="fw-bold">Why should I use bigbasket.com?</h6>
+                                    <p class="product_description text-secondary"> bigbasket.com allows you to walk away
+                                        from the drudgery of grocery shopping and welcome an easy relaxed way of
+                                        browsing and shopping for groceries. Discover new products and shop for all your
+                                        food and grocery needs from the comfort of your home or office. No more getting
+                                        stuck in traffic jams, paying for parking , standing in long queues and carrying
+                                        heavy bags – get everything you need, when you need, right at your doorstep.
+                                        Food shopping online is now easy as every product on your monthly shopping list,
+                                        is now available online at bigbasket.com, India’s best online grocery store!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush about_accordion mb-3" id="about4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="true" aria-controls="collapseThree">
+                                    Where do we operate?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body about_accordion-body m-3 py-4">
+                                    <img src="images/about_3.webp" class="pe-3 float-end about_img" width="90"
+                                        height="90">
+                                    <h6 class="fw-bold">Where do we operate?</h6>
+                                    <p class="product_description text-secondary"> We currently offer our services in
+                                        Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Mysore, Coimbatore,
+                                        Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Lucknow-Kanpur, Gurgaon,
+                                        Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore and Chandigarh Tricity.
+                                        city limits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush about_accordion mb-3" id="about3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                    aria-expanded="true" aria-controls="collapseFour">
+                                    How to order?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse">
+                                <div class="accordion-body about_accordion-body m-3 py-4">
+                                    <h6 class="order_step_description">1. Browse bigbasket.com for products or use the
+                                        search feature.</h6>
+                                    <img src="images/about_4.webp" class="img-fluid" width="300"><br><br>
+                                    <h6 class="order_step_description">2. Add item to your Shopping Basket.</h6>
+                                    <img src="images/about_5.webp" class="img-fluid" width="300"><br><br>
+                                    <h6 class="order_step_description">3. Choose a convenient delivery time from our 4
+                                        Slots* a day Time Slots.</h6>
+                                    <img src="images/about_6.png" class="img-fluid" width="500" height="170"><br><br>
+                                    <h6 class="order_step_description">4. Select suitable payment option(Cash, Sodexo,
+                                        Credit Card).</h6><br>
+                                    <h6 class="order_step_description">5. Your products will be home-delivered as per
+                                        your order..</h6>
+                                    <img src="images/about_7.webp" class="img-fluid" width="300" height="170"><br><br>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="accordion accordion-flush about_accordion mb-3">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    Why should I shop at bigbasket? 
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body about_accordion-body m-3 py-4">
-                        <img src="images/about_2.webp" class="pe-3 float-end about_img" width="85">
-                        <h6 class="fw-bold">Why should I use bigbasket.com?</h6> 
-                        <p class="product_description text-secondary"> bigbasket.com allows you to walk away from the drudgery of grocery shopping and welcome an easy relaxed way of browsing and shopping for groceries. Discover new products and shop for all your food and grocery needs from the comfort of your home or office. No more getting stuck in traffic jams, paying for parking , standing in long queues and carrying heavy bags – get everything you need, when you need, right at your doorstep. Food shopping online is now easy as every product on your monthly shopping list, is now available online at bigbasket.com, India’s best online grocery store!</p>      
-                    </div>
-                </div>
-            </div>
+    </div>
+    <!-- footer -->
+    <div class="container mt-4">
+        <div class="row footer-cols">
+          <div class="col-md-3">
+            <p>big basket</p>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">In News</a></li>
+              <li><a href="green_basket.html">Green bigbasket</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Affliate</a></li>
+              <li><a href="#">terms and Conditions</a></li>
+              <li><a href="#">Careers At bigbasket</a></li>
+              <li><a href="#">bb Instant</a></li>
+              <li><a href="#">bb Daily</a></li>
+              <li><a href="#">bb Blog</a></li>
+              <li><a href="#">bbnow</a></li>
+            </ul>
+  
+          </div>
+          <div class="col-md-3">
+            <p>Help</p>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#">bb Wallet FAQs</a></li>
+              <li><a href="#">bb Wallet T&Cs</a></li>
+              <li><a href="#">Vendor Connect</a></li>
+            </ul>
+  
+          </div>
+          <div class="col-md-3">
+            <p>Download Our Aap</p>
+            <img src="images/store-icon.png" alt="" style="width: 50%;">
+          </div>
+          <div class="col-md-3">
+            <p>Get Social With Us</p>
+            <img src="images/social-media-icons.jpg" alt="" style="width: 100%;">
+  
+          </div>
         </div>
-
-        <div class="accordion accordion-flush about_accordion mb-3">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    Where do we operate? 
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body about_accordion-body m-3 py-4">
-                        <img src="images/about_3.webp" class="pe-3 float-end about_img" width="90" height="90">
-                        <h6 class="fw-bold">Where do we operate?</h6> 
-                        <p class="product_description text-secondary">  We currently offer our services in Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Mysore, Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore and Chandigarh Tricity. city limits.</p>      
-                    </div>
-                </div>
-            </div>
-        </div> 
-    
-        <div class="accordion accordion-flush about_accordion mb-3">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button about_accordion-button fw-bold  bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                        How to order? 
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse">
-                    <div class="accordion-body about_accordion-body m-3 py-4">
-                        <h6 class="order_step_description">1. Browse bigbasket.com for products or use the search feature.</h6>
-                        <img src="images/about_4.webp" class="img-fluid" width="300"><br><br>
-                        <h6 class="order_step_description">2. Add item to your Shopping Basket.</h6>
-                        <img src="images/about_5.webp" class="img-fluid" width="300"><br><br>
-                        <h6 class="order_step_description">3. Choose a convenient delivery time from our 4 Slots* a day Time Slots.</h6>
-                        <img src="images/about_6.png" class="img-fluid" width="500" height="170"><br><br>
-                        <h6 class="order_step_description">4. Select suitable payment option(Cash, Sodexo, Credit Card).</h6><br>
-                        <h6 class="order_step_description">5. Your products will be home-delivered as per your order..</h6>
-                        <img src="images/about_7.webp" class="img-fluid" width="300" height="170"><br><br>
-
-                    </div>
-                </div>
-            </div>
+      </div>
+      </div>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 text-success">POPULAR CATEGORIES:</div>
+          <div class="col-md-10">
+            Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes,</div>
         </div>
-
-    </div> 
+        <div class="row">
+          <div class="col-md-2 text-success">POPULAR BRANDS:</div>
+          <div class="col-md-10">
+            Amul, Nescafe , MTR, RED BULL , elite cake, Pediasure, Yummiez, Yera, Yakult, Britannia, Wow Momo, Fortune , Haldirams , Ferrero, Lays, Patanjali, McCain, kwality walls, Cadbury Dairy Milk, Pedigree,</div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 text-success">CITIES WE SERVE:</div>
+          <div class="col-md-10">
+            Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore, Madurai, Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Nashik Business, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore, Chandigarh Tricity, Jaipur, Bhopal, Noida-Ghaziabad, Kochi, Krishna District, Bhubaneshwar-Cuttack, Guwahati, Renigunta, Hubli, Davanagere, Trichy, Amravati, Raipur, Rajkot, Gwalior, Bareilly, Allahabad, Hyderabad Rural, Bangalore Rural, Chennai Rural, Vizag Rural, Lucknow Rural, Noida Rural, Ahmedabad Rural, Bhopal Rural, Bhubaneswar Rural, Coimbatore Rural, Chandigarh Rural, Gurugram Rural, Guwahati Rural, Indore Rural, Kochi Rural, Kolkata Rural, Mumbai Rural, Mysore Rural, Nagpur Rural, Patna Rural, Pune Rural, Surat Rural, Vadodara Rural, Jaipur Rural, Ranchi, Nashik, Agra, Kozhikode, Amritsar, </div>
+        </div>
+      </div>
+      <div class="bg-light mt-4 p-2"><small><div class="container">Copyright © 2022-2024 Supermarket Grocery Supplies Pvt Ltd</div></small></div>
+      
 </body>
 </html>
